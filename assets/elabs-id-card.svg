@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-elabs" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+    <linearGradient id="card-elabs-front" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="accent-elabs" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <filter id="shadow-id" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg-elabs)" rx="16"/>
+  <circle cx="200" cy="120" r="160" fill="#3b82f6" opacity="0.1" filter="blur(60px)"/>
+  <circle cx="650" cy="380" r="160" fill="#06b6d4" opacity="0.08" filter="blur(60px)"/>
+
+  <!-- Lanyard String at top -->
+  <path d="M220 0 L220 60 Q220 75, 235 75 L245 75 Q260 75, 260 60 L260 0" fill="#1e293b" stroke="#3b82f6" stroke-width="3"/>
+  <path d="M540 0 L540 60 Q540 75, 555 75 L565 75 Q580 75, 580 60 L580 0" fill="#1e293b" stroke="#06b6d4" stroke-width="3"/>
+
+  <!-- ID Card 1: FRONT SIDE (Left) -->
+  <g transform="translate(120, 60)" filter="url(#shadow-id)">
+    <!-- ID Card Base -->
+    <rect width="240" height="370" rx="18" fill="url(#card-elabs-front)" stroke="#334155" stroke-width="2"/>
+    
+    <!-- Lanyard Clip Slot -->
+    <rect x="95" y="14" width="50" height="10" rx="5" fill="#090d16" stroke="#475569" stroke-width="1"/>
+
+    <!-- Header Accent Bar -->
+    <rect x="0" y="38" width="240" height="4" fill="url(#accent-elabs)"/>
+
+    <!-- ELabs Organization Logo -->
+    <g transform="translate(24, 55)">
+      <rect width="28" height="28" rx="6" fill="url(#accent-elabs)"/>
+      <text x="14" y="20" fill="#ffffff" font-size="14" font-family="sans-serif" font-weight="900" text-anchor="middle">E</text>
+      <text x="36" y="16" fill="#ffffff" font-size="14" font-family="sans-serif" font-weight="800" letter-spacing="1">E-LABS</text>
+      <text x="36" y="27" fill="#94a3b8" font-size="8" font-family="sans-serif" letter-spacing="1.5">INNOVATION HUB</text>
+    </g>
+
+    <!-- Member Photo Frame -->
+    <g transform="translate(60, 105)">
+      <rect width="120" height="130" rx="14" fill="#0f172a" stroke="url(#accent-elabs)" stroke-width="2"/>
+      <!-- Silhouette / Avatar Inside Photo Frame -->
+      <circle cx="60" cy="52" r="28" fill="#38bdf8" opacity="0.3"/>
+      <circle cx="60" cy="46" r="18" fill="#cbd5e1"/>
+      <path d="M25 105 C25 80, 40 75, 60 75 C80 75, 95 80, 95 105 Z" fill="#64748b"/>
+      
+      <!-- Role Badge on Photo -->
+      <rect x="15" y="112" width="90" height="22" rx="11" fill="#3b82f6"/>
+      <text x="60" y="126" fill="#ffffff" font-size="8.5" font-family="sans-serif" font-weight="bold" text-anchor="middle">ASST. LEAD</text>
+    </g>
+
+    <!-- Member Details -->
+    <g transform="translate(20, 260)">
+      <text x="100" y="16" fill="#f8fafc" font-size="16" font-family="sans-serif" font-weight="bold" text-anchor="middle">NIKET KUMAR</text>
+      <text x="100" y="32" fill="#38bdf8" font-size="11" font-family="sans-serif" font-weight="600" text-anchor="middle">Assistant Lead</text>
+      
+      <!-- Metadata Strip -->
+      <g transform="translate(10, 45)">
+        <rect width="180" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+        <text x="14" y="14" fill="#64748b" font-size="8" font-family="sans-serif">ID NUMBER</text>
+        <text x="14" y="27" fill="#f8fafc" font-size="10" font-family="monospace" font-weight="bold">EL-2026-084</text>
+        
+        <text x="110" y="14" fill="#64748b" font-size="8" font-family="sans-serif">DEPT</text>
+        <text x="110" y="27" fill="#38bdf8" font-size="10" font-family="sans-serif" font-weight="bold">CREATIVE</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ID Card 2: BACK SIDE (Right) -->
+  <g transform="translate(440, 60)" filter="url(#shadow-id)">
+    <rect width="240" height="370" rx="18" fill="url(#card-elabs-front)" stroke="#334155" stroke-width="2"/>
+    
+    <!-- Lanyard Clip Slot -->
+    <rect x="95" y="14" width="50" height="10" rx="5" fill="#090d16" stroke="#475569" stroke-width="1"/>
+
+    <!-- Header Accent Bar -->
+    <rect x="0" y="38" width="240" height="4" fill="url(#accent-elabs)"/>
+
+    <text x="120" y="68" fill="#94a3b8" font-size="9" font-family="sans-serif" font-weight="bold" letter-spacing="1" text-anchor="middle">SECURITY &amp; ACCESS SPECIFICATION</text>
+
+    <!-- QR Code Graphic Mockup -->
+    <g transform="translate(70, 90)">
+      <rect width="100" height="100" rx="10" fill="#ffffff"/>
+      <!-- QR Blocks -->
+      <rect x="10" y="10" width="26" height="26" fill="#0f172a" rx="4"/>
+      <rect x="16" y="16" width="14" height="14" fill="#ffffff" rx="2"/>
+      <rect x="20" y="20" width="6" height="6" fill="#0f172a"/>
+
+      <rect x="64" y="10" width="26" height="26" fill="#0f172a" rx="4"/>
+      <rect x="70" y="16" width="14" height="14" fill="#ffffff" rx="2"/>
+      <rect x="74" y="20" width="6" height="6" fill="#0f172a"/>
+
+      <rect x="10" y="64" width="26" height="26" fill="#0f172a" rx="4"/>
+      <rect x="16" y="70" width="14" height="14" fill="#ffffff" rx="2"/>
+      <rect x="20" y="74" width="6" height="6" fill="#0f172a"/>
+
+      <rect x="42" y="14" width="16" height="8" fill="#0f172a"/>
+      <rect x="42" y="30" width="8" height="16" fill="#0f172a"/>
+      <rect x="56" y="42" width="12" height="12" fill="#0f172a"/>
+      <rect x="42" y="68" width="18" height="12" fill="#0f172a"/>
+      <rect x="68" y="64" width="16" height="18" fill="#0f172a"/>
+    </g>
+
+    <text x="120" y="210" fill="#38bdf8" font-size="9" font-family="monospace" text-anchor="middle">SCAN FOR VERIFICATION</text>
+
+    <!-- Terms & Signature Lines -->
+    <g transform="translate(20, 230)">
+      <line x1="0" y1="0" x2="200" y2="0" stroke="#334155" stroke-width="1"/>
+      <text x="0" y="18" fill="#64748b" font-size="7.5" font-family="sans-serif">This card remains property of ELabs Innovation Hub.</text>
+      <text x="0" y="30" fill="#64748b" font-size="7.5" font-family="sans-serif">Valid for academic term 2025-2026 access.</text>
+      <text x="0" y="42" fill="#64748b" font-size="7.5" font-family="sans-serif">If found, please return to Admin Office.</text>
+
+      <!-- Signature Spec -->
+      <g transform="translate(0, 60)">
+        <path d="M10 20 Q 30 5, 50 18 T 90 10 T 130 18" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+        <line x1="0" y1="28" x2="140" y2="28" stroke="#475569" stroke-width="1"/>
+        <text x="0" y="40" fill="#64748b" font-size="7.5" font-family="sans-serif">AUTHORIZED SIGNATURE</text>
+      </g>
+    </g>
+  </g>
+</svg>

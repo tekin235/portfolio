@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Niket Kumar | Graphic &amp; Brand Identity Designer Portfolio</title>
+  <meta name="description" content="Portfolio of Niket Kumar — Graphic Designer specializing in brand identity systems, typography, marketing collateral, and social media kits in Figma.">
+  <meta name="keywords" content="Niket Kumar, Graphic Designer, Brand Identity, Typography, Figma, Poster Design, Social Media Kit, Internship">
+  <meta name="author" content="Niket Kumar">
+
+  <!-- OpenGraph / Social Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Niket Kumar | Graphic &amp; Brand Identity Designer">
+  <meta property="og:description" content="Explore real brand identity kits, typography poster series, and social media kits in Figma.">
+  <meta property="og:image" content="assets/elabs-id-card.svg">
+
+  <!-- Mobile & PWA App Configuration -->
+  <meta name="theme-color" content="#090a0f">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Niket Portfolio">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="assets/avatar.svg">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-mark">✦</span>
+        <span>Niket Kumar</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#process" class="nav-link">Process</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle light and dark theme">
+          <span id="theme-icon">☀️</span>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm">Hire Me</a>
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open mobile menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="availability-badge">
+            <span class="status-dot"></span>
+            <span>Open for Graphic Design &amp; Brand Identity Internship 2026</span>
+          </div>
+
+          <h1 class="hero-title">
+            Crafting <span class="gradient-text">Bold Visual Identities</span>, Typography &amp; Brand Collateral.
+          </h1>
+
+          <p class="hero-subtitle">
+            Hi, I’m Niket — a Graphic Designer specializing in brand identity design, marketing collateral, social media announcement kits, and event poster campaigns in Figma, while actively expanding into Adobe Illustrator &amp; Photoshop.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#work" class="btn btn-primary">View Featured Projects ↓</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch ✉️</a>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <h4>3</h4>
+              <p>Figma Projects</p>
+            </div>
+            <div class="metric-item">
+              <h4>100%</h4>
+              <p>Original Work</p>
+            </div>
+            <div class="metric-item">
+              <h4>Figma Focused</h4>
+              <p>Core Tooling</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-wrapper">
+            <img src="assets/avatar.svg" alt="Niket Kumar Avatar Illustration" class="avatar-img" />
+            
+            <!-- Floating Aesthetic Chips -->
+            <div class="floating-chip chip-1">
+              <span>❖ Figma Focused Design</span>
+            </div>
+            <div class="floating-chip chip-2">
+              <span>🚀 Upskilling: Illustrator &amp; Photoshop</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SELECTED WORK / GALLERY SECTION -->
+    <section class="work-section" id="work">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Design Showcase</span>
+          <h2>Featured Figma Projects</h2>
+          <p>Click any project to explore design rationale, print/social layout specs, and interact with live Figma frames.</p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="filter-tabs">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="branding">Brand Identity &amp; Collateral</button>
+          <button class="filter-btn" data-filter="print-editorial">Event Posters &amp; Print</button>
+          <button class="filter-btn" data-filter="marketing">Social Media Announcement Kits</button>
+        </div>
+
+        <!-- Dynamic Grid -->
+        <div class="projects-grid" id="projects-grid">
+          <!-- Populated dynamically by main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- DESIGN PROCESS & METHODOLOGY -->
+    <section class="process-section" id="process">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Creative Methodology</span>
+          <h2>How I Build Brand Identities</h2>
+          <p>A concept-driven process turning core project requirements into cohesive visual collateral in Figma.</p>
+        </div>
+
+        <div class="process-steps-grid">
+          <div class="process-card">
+            <div class="step-num">01</div>
+            <h3>Discovery &amp; Requirements</h3>
+            <p>Gathering specifications, department roles, event information, and target audience needs to set visual direction.</p>
+          </div>
+
+          <div class="process-card">
+            <div class="step-num">02</div>
+            <h3>Grid Layout &amp; Framing</h3>
+            <p>Setting up clean frame dimensions (CR80 print, 1:1 Instagram, A3 Posters) with strict mathematical alignment.</p>
+          </div>
+
+          <div class="process-card">
+            <div class="step-num">03</div>
+            <h3>Typography &amp; Color Accents</h3>
+            <p>Pairing bold modern display type with clean body fonts, applying high-contrast gradient accents for instant hook.</p>
+          </div>
+
+          <div class="process-card">
+            <div class="step-num">04</div>
+            <h3>Componentization &amp; Export</h3>
+            <p>Creating reusable Figma components, print-ready high-res exports, and organized master frames for rapid team handoff.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS & TOOLING MATRIX -->
+    <section class="skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Core Competencies</span>
+          <h2>Design Skills &amp; Software Tools</h2>
+          <p>A transparent breakdown of my core design strengths and active technical growth.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Graphic Disciplines Column -->
+          <div class="skills-column">
+            <h3><span>🎨</span> Visual Disciplines</h3>
+            
+            <div class="skill-bar-wrap">
+              <div class="skill-label-row">
+                <span>Brand Identity &amp; ID Systems</span>
+                <span>95%</span>
+              </div>
+              <div class="skill-track"><div class="skill-progress" style="width: 95%;"></div></div>
+            </div>
+
+            <div class="skill-bar-wrap">
+              <div class="skill-label-row">
+                <span>Social Media Announcement Kits</span>
+                <span>96%</span>
+              </div>
+              <div class="skill-track"><div class="skill-progress" style="width: 96%;"></div></div>
+            </div>
+
+            <div class="skill-bar-wrap">
+              <div class="skill-label-row">
+                <span>Event Promotion &amp; Poster Layout</span>
+                <span>94%</span>
+              </div>
+              <div class="skill-track"><div class="skill-progress" style="width: 94%;"></div></div>
+            </div>
+
+            <div class="skill-bar-wrap">
+              <div class="skill-label-row">
+                <span>Typographic Hierarchy &amp; Layout</span>
+                <span>92%</span>
+              </div>
+              <div class="skill-track"><div class="skill-progress" style="width: 92%;"></div></div>
+            </div>
+          </div>
+
+          <!-- Software Proficiency Column -->
+          <div class="skills-column">
+            <h3><span>🛠️</span> Software &amp; Active Learning</h3>
+            
+            <div class="skill-bar-wrap">
+              <div class="skill-label-row">
+                <span>Figma (Components, Frames &amp; Vectors)</span>
+                <span>95%</span>
+              </div>
+              <div class="skill-track"><div class="skill-progress" style="width: 95%;"></div></div>
+            </div>
+
+            <div class="skill-bar-wrap">
+              <div class="skill-label-row">
+                <span>Vector Frames &amp; Grid Systems</span>
+                <span>94%</span>
+              </div>
+              <div class="skill-track"><div class="skill-progress" style="width: 94%;"></div></div>
+            </div>
+
+            <div class="skill-bar-wrap">
+              <div class="skill-label-row">
+                <span>Adobe Illustrator <small style="color: var(--accent-tertiary);">(Active Learning 🚀)</small></span>
+                <span>65%</span>
+              </div>
+              <div class="skill-track"><div class="skill-progress" style="width: 65%;"></div></div>
+            </div>
+
+            <div class="skill-bar-wrap">
+              <div class="skill-label-row">
+                <span>Adobe Photoshop <small style="color: var(--accent-tertiary);">(Active Learning 🚀)</small></span>
+                <span>60%</span>
+              </div>
+              <div class="skill-track"><div class="skill-progress" style="width: 60%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tool Chips -->
+        <div class="tools-showcase">
+          <div class="tool-chip" style="border-color: var(--accent-primary);">
+            <span>❖ Figma</span>
+            <small style="color: #a5b4fc; font-weight: 600;">Core Tool (Advanced)</small>
+          </div>
+          <div class="tool-chip">
+            <span>✨ Figma Slides</span>
+            <small>Pitch &amp; Presentation</small>
+          </div>
+          <div class="tool-chip">
+            <span>🚀 Illustrator</span>
+            <small style="color: var(--accent-tertiary);">Currently Learning</small>
+          </div>
+          <div class="tool-chip">
+            <span>🚀 Photoshop</span>
+            <small style="color: var(--accent-tertiary);">Currently Learning</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & EDUCATION -->
+    <section class="timeline-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Background</span>
+          <h2>Experience &amp; Education</h2>
+          <p>My journey in creative design leadership, student organization branding, and engineering education.</p>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Timeline Item 1: Design Journey -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-role">Graphic &amp; Brand Designer</h3>
+                <span class="timeline-period">April 2026 - Present</span>
+              </div>
+              <div class="timeline-company">Student Society &amp; Creative Projects (ELabs &amp; Technical Events)</div>
+              <p class="timeline-desc">Started dedicated graphic design journey in April 2026. Designed official society ID cards, technical event promotional poster campaigns (MATLAB Workshop), and leadership announcement social media kits in Figma. Actively upskilling in Adobe Illustrator and Photoshop.</p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: B.Tech 2nd Year -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-role">B.Tech (Bachelor of Technology) — 2nd Year</h3>
+                <span class="timeline-period">2024 - Present (Current)</span>
+              </div>
+              <div class="timeline-company">Undergraduate Engineering Degree</div>
+              <p class="timeline-desc">Currently in 2nd year of B.Tech. Combining analytical engineering problem-solving with creative visual layout, typography structure, and brand collateral design.</p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: 12th Grade -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-role">Higher Secondary Education (12th Grade)</h3>
+                <span class="timeline-period">Completed in 2024</span>
+              </div>
+              <div class="timeline-company">Senior Secondary School</div>
+              <p class="timeline-desc">Successfully completed 12th standard education in 2024 with a strong analytical and scientific foundation before entering undergraduate engineering studies.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card-centered">
+          <span class="section-tag">Let's Connect</span>
+          <h2>Ready to Build Something Unforgettable?</h2>
+          <p>
+            I am actively interviewing for <strong>Graphic Design, Brand Identity, and Visual Communication internships</strong>. 
+            Feel free to copy my email or reach out directly!
+          </p>
+
+          <div class="contact-actions-center">
+            <button class="contact-card-btn" id="copy-email-btn" type="button">
+              <span>📧 niketkr235@gmail.com</span>
+              <small>Click to Copy</small>
+            </button>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=niketkr235@gmail.com&su=Graphic%20Design%20Inquiry%20-%20Portfolio" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              Open in Gmail ✉️
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Niket Kumar. Built with semantic HTML, modern CSS &amp; JavaScript. Zero dependencies.</p>
+    </div>
+  </footer>
+
+  <!-- CASE STUDY DEEP DIVE MODAL -->
+  <dialog class="case-study-modal" id="case-study-modal">
+    <div class="modal-content-card">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close Case Study Modal">✕</button>
+      <div id="modal-dynamic-content">
+        <!-- Injected dynamically on click -->
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Scripts -->
+  <script src="js/projects-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

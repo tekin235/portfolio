@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-lead" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="50%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#fde68a" />
+    </linearGradient>
+    <linearGradient id="silver-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#94a3b8" />
+      <stop offset="50%" stop-color="#cbd5e1" />
+      <stop offset="100%" stop-color="#f8fafc" />
+    </linearGradient>
+    <filter id="shadow-lead" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg-lead)" rx="16"/>
+  <circle cx="200" cy="120" r="160" fill="#f59e0b" opacity="0.1" filter="blur(60px)"/>
+  <circle cx="600" cy="380" r="160" fill="#818cf8" opacity="0.08" filter="blur(60px)"/>
+
+  <!-- Card 1: LEAD ANNOUNCEMENT POST (Left) -->
+  <g transform="translate(100, 45)" filter="url(#shadow-lead)">
+    <rect width="280" height="400" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    
+    <!-- Top Gold Crown / Star Ribbon -->
+    <rect width="280" height="5" fill="url(#gold-grad)"/>
+    
+    <text x="24" y="34" fill="#fbbf24" font-size="9" font-family="sans-serif" font-weight="bold" letter-spacing="2">OFFICIAL ANNOUNCEMENT</text>
+    <text x="256" y="34" fill="#94a3b8" font-size="9" font-family="monospace" text-anchor="end">2026 TERM</text>
+
+    <!-- Leadership Banner -->
+    <text x="24" y="68" fill="#ffffff" font-size="20" font-family="sans-serif" font-weight="900" letter-spacing="1">MEET OUR</text>
+    <text x="24" y="94" fill="url(#gold-grad)" font-size="24" font-family="sans-serif" font-weight="900">TEAM LEAD</text>
+
+    <!-- Portrait Photo Frame -->
+    <g transform="translate(40, 115)">
+      <rect width="200" height="180" rx="12" fill="#0f172a" stroke="url(#gold-grad)" stroke-width="2"/>
+      
+      <!-- Avatar Silhouette Inside Frame -->
+      <circle cx="100" cy="75" r="45" fill="#f59e0b" opacity="0.2"/>
+      <circle cx="100" cy="65" r="28" fill="#fbbf24"/>
+      <path d="M45 150 C45 110, 70 105, 100 105 C130 105, 155 110, 155 150 Z" fill="#475569"/>
+
+      <!-- Star Badge -->
+      <circle cx="180" cy="25" r="14" fill="url(#gold-grad)"/>
+      <text x="180" y="30" fill="#0f172a" font-size="14" font-weight="bold" text-anchor="middle">★</text>
+    </g>
+
+    <!-- Name & Department -->
+    <g transform="translate(24, 320)">
+      <text x="116" y="20" fill="#ffffff" font-size="17" font-family="sans-serif" font-weight="bold" text-anchor="middle">LEAD COORDINATOR</text>
+      <text x="116" y="38" fill="#fbbf24" font-size="11" font-family="sans-serif" font-weight="600" text-anchor="middle">Creative &amp; Technical Operations</text>
+      <text x="116" y="58" fill="#94a3b8" font-size="9" font-family="sans-serif" text-anchor="middle">Inspiring Innovation &amp; Excellence</text>
+    </g>
+  </g>
+
+  <!-- Card 2: ASSISTANT LEAD ANNOUNCEMENT (Right) -->
+  <g transform="translate(420, 45)" filter="url(#shadow-lead)">
+    <rect width="280" height="400" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    
+    <!-- Top Silver Accent Ribbon -->
+    <rect width="280" height="5" fill="url(#silver-grad)"/>
+    
+    <text x="24" y="34" fill="#cbd5e1" font-size="9" font-family="sans-serif" font-weight="bold" letter-spacing="2">OFFICIAL ANNOUNCEMENT</text>
+    <text x="256" y="34" fill="#94a3b8" font-size="9" font-family="monospace" text-anchor="end">2026 TERM</text>
+
+    <!-- Leadership Banner -->
+    <text x="24" y="68" fill="#ffffff" font-size="20" font-family="sans-serif" font-weight="900" letter-spacing="1">MEET OUR</text>
+    <text x="24" y="94" fill="url(#silver-grad)" font-size="24" font-family="sans-serif" font-weight="900">ASST. LEAD</text>
+
+    <!-- Portrait Photo Frame -->
+    <g transform="translate(40, 115)">
+      <rect width="200" height="180" rx="12" fill="#0f172a" stroke="url(#silver-grad)" stroke-width="2"/>
+      
+      <!-- Avatar Silhouette Inside Frame -->
+      <circle cx="100" cy="75" r="45" fill="#38bdf8" opacity="0.2"/>
+      <circle cx="100" cy="65" r="28" fill="#94a3b8"/>
+      <path d="M45 150 C45 110, 70 105, 100 105 C130 105, 155 110, 155 150 Z" fill="#475569"/>
+
+      <!-- Badge -->
+      <circle cx="180" cy="25" r="14" fill="url(#silver-grad)"/>
+      <text x="180" y="30" fill="#0f172a" font-size="14" font-weight="bold" text-anchor="middle">✦</text>
+    </g>
+
+    <!-- Name & Department -->
+    <g transform="translate(24, 320)">
+      <text x="116" y="20" fill="#ffffff" font-size="17" font-family="sans-serif" font-weight="bold" text-anchor="middle">ASSISTANT LEAD</text>
+      <text x="116" y="38" fill="#38bdf8" font-size="11" font-family="sans-serif" font-weight="600" text-anchor="middle">Design Systems &amp; Media Guild</text>
+      <text x="116" y="58" fill="#94a3b8" font-size="9" font-family="sans-serif" text-anchor="middle">Driving Creative Collaboration</text>
+    </g>
+  </g>
+</svg>

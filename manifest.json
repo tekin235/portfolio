@@ -1,0 +1,18 @@
+{
+  "name": "Niket Kumar - Graphic Design Portfolio",
+  "short_name": "Niket Portfolio",
+  "description": "Graphic & Brand Identity Designer Portfolio featuring Figma projects and brand identity collateral.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#090a0f",
+  "theme_color": "#6366f1",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/avatar.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
