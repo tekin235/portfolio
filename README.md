@@ -4,7 +4,7 @@ This repository contains the source code for the personal portfolio of Niket Kum
 
 ---
 
-## Task 1: Docker Containerization
+## Docker Containerization
 
 ### Architecture & Design
 - **Base Image:** `nginx:alpine` — minimal, security-hardened Alpine Linux footprint (~23-40 MB total).
